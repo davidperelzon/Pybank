@@ -10,8 +10,8 @@ class Conta:
         return self.__saldo
 
     #set altera a variavel
-    def set_saldo(self, valor):
-        if self.__saldo - valor < 0:
+    def saque(self, valor):
+        if self.__saldo - valor < 0 and valor < 0:
             print('Saldo insuficiente')
         else:
             self.__saldo -= valor
